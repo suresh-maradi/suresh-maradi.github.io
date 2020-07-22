@@ -1,0 +1,28 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/webpages/IndexMaster.Master" AutoEventWireup="true" CodeBehind="WD Lab.aspx.cs" Inherits="hometute.webpages.webforms.WD_Lab" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+ <center> <iframe width="400" height="400" src="../../dbcode/Computer-Science-Engineering-Tentative-syla.pdf" frameborder="0" allowfullscreen>
+</iframe>
+
+    <div class="p-5">
+<asp:Label ID="lblExperientNo" runat="server" Text="select an Experiment"></asp:Label>
+    <asp:DropDownList ID="drpdwnListofExperiments" OnSelectedIndexChanged="drpdwnListofExperiments_SelectedIndexChanged" CssClass="align-content-center" runat="server">
+        <asp:ListItem>--select--</asp:ListItem>
+        <asp:ListItem>Experiment-1</asp:ListItem>
+        <asp:ListItem>Experiment-2</asp:ListItem>
+        <asp:ListItem>Experiment-3</asp:ListItem>
+        <asp:ListItem>Experiment-4</asp:ListItem>
+        <asp:ListItem>Experiment-5</asp:ListItem>
+        <asp:ListItem>Experiment-6</asp:ListItem>
+        <asp:ListItem>Experiment-7</asp:ListItem>
+        <asp:ListItem>Experiment-8</asp:ListItem>
+        <asp:ListItem>Experiment-9</asp:ListItem>
+        <asp:ListItem>Experiment-10</asp:ListItem>
+    </asp:DropDownList>
+
+            </div>
+    <iframe id="webiframe" runat="server" width="700" height="700" src="../Webexperiments/WebExp1.aspx" frameborder="0" allowfullscreen>
+</iframe>
+     </center> 
+    </asp:Content>

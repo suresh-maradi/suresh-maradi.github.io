@@ -1,0 +1,117 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="WDLab.master.cs" Inherits="hometute.webpages.webforms.WDLab" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+     <!--Referred to Bootsrap template 4.3.1-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--ends here-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta&family=Rowdies:wght@300&display=swap" rel="stylesheet">
+    <title>hometute</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        ul li {font-family: 'Rowdies', cursive;
+        }
+
+    </style>
+   </head>
+<body>
+
+     <!--nav bar reference-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-success">
+  <a class="navbar-brand" href="#">hometute Lab House</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="nav navbar-nav ml-auto text-right">
+      <li class="nav-item">
+        <a class="nav-link" role="menuitem" href="#"><span>Web Technology</span><span class="sr-only">(current)</span></a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" role="menuitem" href="#"><span>DBMS</span><span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+    <!--ends here navbar-->
+    <form id="form1" runat="server">
+        <div><br />
+     <asp:Table ID="Table1" HorizontalAlign="Center" CssClass="table-striped" runat="server">
+         <asp:TableHeaderRow HorizontalAlign="Center">
+             <asp:TableHeaderCell HorizontalAlign="Center" ColumnSpan="4">WEB TECHNOLOGY LABORATORY WITH MINI PROJECT</asp:TableHeaderCell>
+         </asp:TableHeaderRow>
+         <asp:TableHeaderRow HorizontalAlign="Center">
+             <asp:TableCell HorizontalAlign="Center" ColumnSpan="4">[As per Choice Based Credit System (CBCS) scheme]
+(Effective from the academic year)</asp:TableCell>
+         </asp:TableHeaderRow>
+         <asp:TableHeaderRow HorizontalAlign="Center">
+             <asp:TableHeaderCell HorizontalAlign="Center" ColumnSpan="4">Semester VII</asp:TableHeaderCell>
+         </asp:TableHeaderRow>
+         <asp:TableHeaderRow>
+             <asp:TableHeaderCell >Subject Code</asp:TableHeaderCell>
+             <asp:TableCell>15CSL77</asp:TableCell>
+             <asp:TableHeaderCell >IA Marks</asp:TableHeaderCell>
+             <asp:TableCell>20</asp:TableCell>
+         </asp:TableHeaderRow>
+         <asp:TableHeaderRow>
+             <asp:TableHeaderCell >Number of Lecture Hours/Week</asp:TableHeaderCell>
+             <asp:TableCell>01I + 02P</asp:TableCell>
+             <asp:TableHeaderCell>Exam Marks</asp:TableHeaderCell>
+             <asp:TableCell>80</asp:TableCell>
+         </asp:TableHeaderRow>
+         <asp:TableHeaderRow>
+             <asp:TableHeaderCell>Total Number of Lecture Hours</asp:TableHeaderCell>
+             <asp:TableCell>40</asp:TableCell>
+             <asp:TableHeaderCell>Exam Hours</asp:TableHeaderCell>
+             <asp:TableCell>03</asp:TableCell>
+         </asp:TableHeaderRow>
+     </asp:Table> 
+ </div>
+        <br />
+    <center>
+    <div>
+<asp:Label ID="lblExperientNo" runat="server" Text="select an Experiment" class="text-success"></asp:Label>
+    <asp:DropDownList AutoPostBack="true" ID="drpdwnListofExperiments" OnSelectedIndexChanged="drpdwnListofExperiments_SelectedIndexChanged" CssClass="align-content-center" runat="server">
+        <asp:ListItem>--select--</asp:ListItem>
+        <asp:ListItem>Experiment-1</asp:ListItem>
+        <asp:ListItem>Experiment-2</asp:ListItem>
+        <asp:ListItem>Experiment-3</asp:ListItem>
+        <asp:ListItem>Experiment-4</asp:ListItem>
+        <asp:ListItem>Experiment-5</asp:ListItem>
+        <asp:ListItem>Experiment-6</asp:ListItem>
+        <asp:ListItem>Experiment-7</asp:ListItem>
+        <asp:ListItem>Experiment-8</asp:ListItem>
+        <asp:ListItem>Experiment-9</asp:ListItem>
+        <asp:ListItem>Experiment-10</asp:ListItem>
+    </asp:DropDownList>
+            </div> 
+        <asp:Label ID="lblExperimentName" class="text-info" runat="server" Text="Select an Experiment"></asp:Label>
+ <asp:Table ID="Table2" runat="server">
+     <asp:TableHeaderRow>
+         <asp:TableHeaderCell><asp:Button ID="btntheory" CssClass="badge-pill" runat="server" Text="Theory" OnClick="btntheory_Click"></asp:Button></asp:TableHeaderCell>
+         <asp:TableHeaderCell><asp:Button ID="btnprogram" runat="server" CssClass="badge-pill" Text="Program" OnClick="btnprogram_Click"></asp:Button></asp:TableHeaderCell>
+         <asp:TableHeaderCell><asp:Button ID="btnviva" runat="server" CssClass="badge-pill" Text="Viva" OnClick="btnviva_Click"></asp:Button></asp:TableHeaderCell>
+     </asp:TableHeaderRow>
+ </asp:Table>
+        </center>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>

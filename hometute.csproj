@@ -1,0 +1,423 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6145103B-8225-41C3-8431-E3C180A5A113}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>hometute</RootNamespace>
+    <AssemblyName>hometute</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44343</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\bootstrap4.3.1\css\bootstrap-grid.css.map" />
+    <Content Include="css\bootstrap4.3.1\css\bootstrap-grid.min.css.map" />
+    <Content Include="css\bootstrap4.3.1\css\bootstrap-reboot.css.map" />
+    <Content Include="css\bootstrap4.3.1\css\bootstrap-reboot.min.css.map" />
+    <Content Include="css\bootstrap4.3.1\css\bootstrap.css.map" />
+    <Content Include="css\bootstrap4.3.1\css\bootstrap.min.css.map" />
+    <Content Include="images\Chota Projects-1.jpg" />
+    <Content Include="images\sliding images\wddesign1.jpg" />
+    <Content Include="images\sliding images\wddesign2.jpg" />
+    <Content Include="images\sliding images\wddesign3.jpg" />
+    <Content Include="images\sliding images\image1.jpg" />
+    <Content Include="images\sliding images\image2.jpg" />
+    <Content Include="images\sliding images\image3.jpg" />
+    <Content Include="index.aspx" />
+    <Content Include="script\bootstrap4.3.1\js\bootstrap.bundle.js.map" />
+    <Content Include="script\bootstrap4.3.1\js\bootstrap.bundle.min.js.map" />
+    <Content Include="script\bootstrap4.3.1\js\bootstrap.js.map" />
+    <Content Include="script\bootstrap4.3.1\js\bootstrap.min.js.map" />
+    <Content Include="webpages\Webexperiments\codedtext\exp1.txt" />
+    <Content Include="webpages\Webexperiments\codedtext\exp10.txt" />
+    <Content Include="webpages\Webexperiments\codedtext\exp2.txt" />
+    <Content Include="webpages\Webexperiments\codedtext\exp3.txt" />
+    <Content Include="webpages\Webexperiments\codedtext\exp4.txt" />
+    <Content Include="webpages\Webexperiments\codedtext\exp5.txt" />
+    <Content Include="webpages\Webexperiments\codedtext\exp6.txt" />
+    <Content Include="webpages\Webexperiments\codedtext\exp7.txt" />
+    <Content Include="webpages\Webexperiments\codedtext\exp8.txt" />
+    <Content Include="webpages\Webexperiments\codedtext\exp9.txt" />
+    <Content Include="webpages\Webexperiments\codedtext\Expcode2.aspx" />
+    <Content Include="webpages\Webexperiments\codedtext\Expcode10.aspx" />
+    <Content Include="webpages\Webexperiments\codedtext\Expcode9.aspx" />
+    <Content Include="webpages\Webexperiments\codedtext\Expcode8.aspx" />
+    <Content Include="webpages\Webexperiments\codedtext\Expcode7.aspx" />
+    <Content Include="webpages\Webexperiments\codedtext\Expcode6.aspx" />
+    <Content Include="webpages\Webexperiments\codedtext\Expcode5.aspx" />
+    <Content Include="webpages\Webexperiments\codedtext\Expcode4.aspx" />
+    <Content Include="webpages\Webexperiments\codedtext\Expcode3.aspx" />
+    <Content Include="webpages\Webexperiments\codedtext\Expcode1.aspx" />
+    <Content Include="webpages\Webexperiments\index.aspx" />
+    <Content Include="webpages\Webexperiments\output\calci.gif" />
+    <Content Include="webpages\Webexperiments\output\Exp1.aspx" />
+    <Content Include="webpages\Webexperiments\Theory\Theory2.aspx" />
+    <Content Include="webpages\Webexperiments\Theory\Theory9.aspx" />
+    <Content Include="webpages\Webexperiments\Theory\Theory10.aspx" />
+    <Content Include="webpages\Webexperiments\Theory\Theory8.aspx" />
+    <Content Include="webpages\Webexperiments\Theory\Theory7.aspx" />
+    <Content Include="webpages\Webexperiments\Theory\Theory6.aspx" />
+    <Content Include="webpages\Webexperiments\Theory\Theory5.aspx" />
+    <Content Include="webpages\Webexperiments\Theory\Theory4.aspx" />
+    <Content Include="webpages\Webexperiments\Theory\Theory3.aspx" />
+    <Content Include="webpages\Webexperiments\Theory\Theory1.aspx" />
+    <Content Include="webpages\Webexperiments\Viva\viva5.aspx" />
+    <Content Include="webpages\Webexperiments\Viva\viva9.aspx" />
+    <Content Include="webpages\Webexperiments\Viva\viva8.aspx" />
+    <Content Include="webpages\Webexperiments\Viva\viva7.aspx" />
+    <Content Include="webpages\Webexperiments\Viva\viva6.aspx" />
+    <Content Include="webpages\Webexperiments\Viva\viva10.aspx" />
+    <Content Include="webpages\Webexperiments\Viva\viva4.aspx" />
+    <Content Include="webpages\Webexperiments\Viva\viva3.aspx" />
+    <Content Include="webpages\Webexperiments\Viva\viva2.aspx" />
+    <Content Include="webpages\Webexperiments\Viva\viva1.aspx" />
+    <Content Include="dbcode\Computer-Science-Engineering-Tentative-syla.pdf" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="webpages\IndexMaster.Master" />
+    <Content Include="webpages\webforms\WDLab.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\bootstrap4.3.1\css\bootstrap-grid.css" />
+    <Content Include="css\bootstrap4.3.1\css\bootstrap-grid.min.css" />
+    <Content Include="css\bootstrap4.3.1\css\bootstrap-reboot.css" />
+    <Content Include="css\bootstrap4.3.1\css\bootstrap-reboot.min.css" />
+    <Content Include="css\bootstrap4.3.1\css\bootstrap.css" />
+    <Content Include="css\bootstrap4.3.1\css\bootstrap.min.css" />
+    <Content Include="script\bootstrap4.3.1\js\bootstrap.bundle.js" />
+    <Content Include="script\bootstrap4.3.1\js\bootstrap.bundle.min.js" />
+    <Content Include="script\bootstrap4.3.1\js\bootstrap.js" />
+    <Content Include="script\bootstrap4.3.1\js\bootstrap.min.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="webpages\IndexMaster.Master.cs">
+      <DependentUpon>IndexMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webpages\IndexMaster.Master.designer.cs">
+      <DependentUpon>IndexMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\codedtext\Expcode2.aspx.cs">
+      <DependentUpon>Expcode2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\codedtext\Expcode2.aspx.designer.cs">
+      <DependentUpon>Expcode2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\codedtext\Expcode10.aspx.cs">
+      <DependentUpon>Expcode10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\codedtext\Expcode10.aspx.designer.cs">
+      <DependentUpon>Expcode10.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\codedtext\Expcode9.aspx.cs">
+      <DependentUpon>Expcode9.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\codedtext\Expcode9.aspx.designer.cs">
+      <DependentUpon>Expcode9.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\codedtext\Expcode8.aspx.cs">
+      <DependentUpon>Expcode8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\codedtext\Expcode8.aspx.designer.cs">
+      <DependentUpon>Expcode8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\codedtext\Expcode7.aspx.cs">
+      <DependentUpon>Expcode7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\codedtext\Expcode7.aspx.designer.cs">
+      <DependentUpon>Expcode7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\codedtext\Expcode6.aspx.cs">
+      <DependentUpon>Expcode6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\codedtext\Expcode6.aspx.designer.cs">
+      <DependentUpon>Expcode6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\codedtext\Expcode5.aspx.cs">
+      <DependentUpon>Expcode5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\codedtext\Expcode5.aspx.designer.cs">
+      <DependentUpon>Expcode5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\codedtext\Expcode4.aspx.cs">
+      <DependentUpon>Expcode4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\codedtext\Expcode4.aspx.designer.cs">
+      <DependentUpon>Expcode4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\codedtext\Expcode3.aspx.cs">
+      <DependentUpon>Expcode3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\codedtext\Expcode3.aspx.designer.cs">
+      <DependentUpon>Expcode3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\codedtext\Expcode1.aspx.cs">
+      <DependentUpon>Expcode1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\codedtext\Expcode1.aspx.designer.cs">
+      <DependentUpon>Expcode1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\output\Exp1.aspx.cs">
+      <DependentUpon>Exp1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\output\Exp1.aspx.designer.cs">
+      <DependentUpon>Exp1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\Theory\Theory2.aspx.cs">
+      <DependentUpon>Theory2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\Theory\Theory2.aspx.designer.cs">
+      <DependentUpon>Theory2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\Theory\Theory9.aspx.cs">
+      <DependentUpon>Theory9.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\Theory\Theory9.aspx.designer.cs">
+      <DependentUpon>Theory9.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\Theory\Theory10.aspx.cs">
+      <DependentUpon>Theory10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\Theory\Theory10.aspx.designer.cs">
+      <DependentUpon>Theory10.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\Theory\Theory8.aspx.cs">
+      <DependentUpon>Theory8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\Theory\Theory8.aspx.designer.cs">
+      <DependentUpon>Theory8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\Theory\Theory7.aspx.cs">
+      <DependentUpon>Theory7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\Theory\Theory7.aspx.designer.cs">
+      <DependentUpon>Theory7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\Theory\Theory6.aspx.cs">
+      <DependentUpon>Theory6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\Theory\Theory6.aspx.designer.cs">
+      <DependentUpon>Theory6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\Theory\Theory5.aspx.cs">
+      <DependentUpon>Theory5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\Theory\Theory5.aspx.designer.cs">
+      <DependentUpon>Theory5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\Theory\Theory4.aspx.cs">
+      <DependentUpon>Theory4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\Theory\Theory4.aspx.designer.cs">
+      <DependentUpon>Theory4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\Theory\Theory3.aspx.cs">
+      <DependentUpon>Theory3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\Theory\Theory3.aspx.designer.cs">
+      <DependentUpon>Theory3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\Theory\Theory1.aspx.cs">
+      <DependentUpon>Theory1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\Theory\Theory1.aspx.designer.cs">
+      <DependentUpon>Theory1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\Viva\viva5.aspx.cs">
+      <DependentUpon>viva5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\Viva\viva5.aspx.designer.cs">
+      <DependentUpon>viva5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\Viva\viva9.aspx.cs">
+      <DependentUpon>viva9.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\Viva\viva9.aspx.designer.cs">
+      <DependentUpon>viva9.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\Viva\viva8.aspx.cs">
+      <DependentUpon>viva8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\Viva\viva8.aspx.designer.cs">
+      <DependentUpon>viva8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\Viva\viva7.aspx.cs">
+      <DependentUpon>viva7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\Viva\viva7.aspx.designer.cs">
+      <DependentUpon>viva7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\Viva\viva6.aspx.cs">
+      <DependentUpon>viva6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\Viva\viva6.aspx.designer.cs">
+      <DependentUpon>viva6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\Viva\viva10.aspx.cs">
+      <DependentUpon>viva10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\Viva\viva10.aspx.designer.cs">
+      <DependentUpon>viva10.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\Viva\viva4.aspx.cs">
+      <DependentUpon>viva4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\Viva\viva4.aspx.designer.cs">
+      <DependentUpon>viva4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\Viva\viva3.aspx.cs">
+      <DependentUpon>viva3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\Viva\viva3.aspx.designer.cs">
+      <DependentUpon>viva3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\Viva\viva2.aspx.cs">
+      <DependentUpon>viva2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\Viva\viva2.aspx.designer.cs">
+      <DependentUpon>viva2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\Viva\viva1.aspx.cs">
+      <DependentUpon>viva1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webpages\Webexperiments\Viva\viva1.aspx.designer.cs">
+      <DependentUpon>viva1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="webpages\webforms\WDLab.Master.cs">
+      <DependentUpon>WDLab.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="webpages\webforms\WDLab.Master.designer.cs">
+      <DependentUpon>WDLab.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="styles\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>41611</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44343/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
